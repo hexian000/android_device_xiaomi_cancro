@@ -19,7 +19,7 @@
 
 RAW_ID=`cat /sys/devices/system/soc/soc0/raw_id`
 
-if [ $RAW_ID == 1974 ]; then
+if [ $RAW_ID == 1974 ] || [ $RAW_ID == 1973 ] || [ $RAW_ID == 1972 ]; then
  rm -rf /system/app/NfcNci
  rm -rf /system/priv-app/Tag
  rm -rf /system/lib/*nfc*
